@@ -1,0 +1,7 @@
+HOLDING_PERIOD_BUCKET,N_TRADES,SHARE_OF_TRADES
+0-30 days,2,0.2
+31-60 days,2,0.2
+61-90 days,2,0.2
+91-120 days,2,0.2
+121-180 days,2,0.2
+>180 days,0,0.0
