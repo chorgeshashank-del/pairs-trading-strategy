@@ -141,6 +141,7 @@ Run these commands in order. Wait for each command to finish successfully before
 
 ```powershell
 python src/02_nifty_pharma_total_return_construction.py
+python src/03_nifty_pharma_point_in_time_membership_v2.py
 python src/engle_granger_pair_selection_BIDIRECTIONAL_FINAL.py
 python src/ssd_COMPLETE_FASTTRACK_FINAL_WINDOW_FIXED.py
 python src/engle_granger_COMPLETE_REQUIRED_BACKTEST_FIXED.py
@@ -171,6 +172,8 @@ Verification covered pair selection, both backtests, method comparison and figur
 Rebuilding the prepared datasets from raw exchange downloads has not yet been verified from this repository alone. Benchmark returns and strategy returns are calculated between the same shared observation dates for both methods.
 
 Total-return construction was also verified using the supplied cleaned equity data and corporate-action ledger. The rebuilt dataset matched the existing 68,309-row, 41-column dataset within numerical tolerance. This does not verify the earlier steps that produce the cleaned equity data, corporate-action ledger or investable universe from original sources.
+
+Historical index membership reconstruction was also tested. The rebuilt members-only dataset matched the saved dataset: 36,646 rows and 50 columns. This step reconstructs index membership; the later liquidity and futures-eligibility filters remain separate.
 
 ## Results and Interpretation
 
