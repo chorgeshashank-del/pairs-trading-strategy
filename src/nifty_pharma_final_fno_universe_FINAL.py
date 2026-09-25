@@ -2,11 +2,14 @@ import pandas as pd
 import numpy as np
 from pathlib import Path
 from datetime import datetime, date
-import requests, zipfile, io, csv, hashlib, re, time, shutil, os
+import zipfile, io, csv, hashlib, re, time, shutil, os
 from openpyxl import load_workbook
 
 # Config can be overridden by environment variables for testing.
-PROJECT_ROOT = Path(os.environ.get('NIFTY_PROJECT_ROOT', r'C:\fin proj'))
+PROJECT_ROOT = Path(
+    os.environ.get("PAIR_TRADING_PROJECT_ROOT",
+        os.environ.get("NIFTY_PROJECT_ROOT", str(Path(__file__).resolve().parents[1])))
+).resolve()
 FORMATION_DIAGNOSTICS_FILE = Path(os.environ.get('NIFTY_DIAGNOSTICS_FILE', str(PROJECT_ROOT / 'nse_pharma_formation_investability' / '02_STOCK_FORMATION_DIAGNOSTICS.csv')))
 OUTPUT_DIR = Path(os.environ.get('NIFTY_FNO_OUTPUT_DIR', str(PROJECT_ROOT / 'nse_pharma_final_investable_universe_FINAL')))
 RAW_TRACKER_DIR = OUTPUT_DIR / 'raw_nse_fno_tracker'
@@ -78,6 +81,7 @@ def robust_download(urls, target, what):
         stamp=datetime.now().strftime('%Y%m%d_%H%M%S')
         corrupt=target.with_name(target.name+f'.corrupt_{stamp}')
         target.rename(corrupt)
+    import requests  # Needed only when a source file is not cached.
     sess=requests.Session()
     headers={'User-Agent':'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/151 Safari/537.36','Accept':'*/*','Connection':'keep-alive'}
     errs=[]
