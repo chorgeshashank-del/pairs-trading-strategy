@@ -168,7 +168,7 @@ python src/make_submission_exhibits.py
 
 Verification covered pair selection, both backtests, method comparison and figure generation using the packaged prepared data.
 
-Rebuilding the prepared datasets from raw exchange downloads has not yet been verified from this repository alone. The benchmark-calendar alignment issue described under limitations also remains unresolved.
+Rebuilding the prepared datasets from raw exchange downloads has not yet been verified from this repository alone. Benchmark returns and strategy returns are calculated between the same shared observation dates for both methods.
 
 ## Results and Interpretation
 
@@ -187,5 +187,5 @@ Other limitations include:
 - Futures profit and loss uses an adjusted spot-price approximation rather than reconstructed historical futures contracts.
 - Exact monthly futures rolls and whole-number contract sizing are not modelled.
 - Historical surveillance restrictions and locked-circuit execution are not fully reconstructed.
-- Missing benchmark observations require calendar-alignment verification before market beta and correlation are treated as final.
+- The benchmark lacks 11 strategy-calendar dates. Both methods compare returns between shared observation dates, so intervals spanning missing observations cover multiple sessions. Missing benchmark prices are not filled.
 - The small trade sample limits confidence in the results.
