@@ -117,13 +117,58 @@ Its input files are:
 
 The figure script sets the NumPy random seed to `20260830`. The plotted figures use saved results and do not require random sampling.
 
-## Backtest Reproduction Status
+## Backtest Reproduction
 
-Figure reproduction is supported by the included result tables.
+Both backtests and the method-comparison script were successfully rerun from the prepared datasets and cached exchange reports included in this repository. Daily portfolio results matched the published outputs within numerical tolerance.
 
-A complete rerun from source data requires additional project datasets and cached exchange files that are not yet packaged in this repository. The strategy scripts use the original project directory structure, with the project root configurable through `PAIR_TRADING_PROJECT_ROOT`.
+The reproduced cumulative net returns were:
 
-Running the figure command does not rerun pair selection or the backtests. Reproduction of the complete pipeline from a fresh repository download remains to be verified.
+- SSD: -10.38%
+- Engle–Granger: +4.34%
+
+### Run instructions
+
+Install the packages listed in `requirements.txt` first.
+
+Open Windows PowerShell in the repository's main folder—the folder containing `README.md` and `requirements.txt`.
+
+Set the project directory:
+
+```powershell
+$env:PAIR_TRADING_PROJECT_ROOT = (Get-Location).Path
+```
+
+Run these commands in order. Wait for each command to finish successfully before running the next:
+
+```powershell
+python src/engle_granger_pair_selection_BIDIRECTIONAL_FINAL.py
+python src/ssd_COMPLETE_FASTTRACK_FINAL_WINDOW_FIXED.py
+python src/engle_granger_COMPLETE_REQUIRED_BACKTEST_FIXED.py
+python src/final_ssd_vs_eg_comparison.py
+```
+
+### Generated outputs
+
+The scripts write regenerated outputs to:
+
+- `pair_trading_methods/SSD/05_FINAL_FASTTRACK_REQUIRED/`
+- `pair_trading_methods/ENGLE_GRANGER/01_pair_selection/`
+- `pair_trading_methods/ENGLE_GRANGER/02_FINAL_BACKTEST/`
+- `pair_trading_methods/FINAL_SSD_VS_EG_COMPARISON/`
+
+The published tables in the top-level `results/` folder remain saved reference outputs; the backtest commands do not automatically replace them.
+
+To regenerate the figures from those published reference tables:
+
+```powershell
+python src/make_submission_exhibits.py
+```
+
+### Scope of verification
+
+Verification covered pair selection, both backtests, method comparison and figure generation using the packaged prepared data.
+
+Rebuilding the prepared datasets from raw exchange downloads has not yet been verified from this repository alone. The benchmark-calendar alignment issue described under limitations also remains unresolved.
 
 ## Results and Interpretation
 
