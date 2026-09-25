@@ -1543,10 +1543,16 @@ require_columns(benchmark, ["DATE", "CLOSE"], "NIFTY500 benchmark")
 benchmark["DATE"] = parse_dates(benchmark["DATE"])
 benchmark["CLOSE"] = pd.to_numeric(benchmark["CLOSE"], errors="coerce")
 benchmark = benchmark.dropna(subset=["DATE", "CLOSE"]).sort_values("DATE")
-benchmark["BENCHMARK_RETURN"] = benchmark["CLOSE"].pct_change()
-merged_market = daily_1x[["DATE", "DAILY_RETURN"]].merge(
-    benchmark[["DATE", "BENCHMARK_RETURN"]], on="DATE", how="inner"
-).dropna()
+# Calculate both returns between the same shared dates.
+merged_market = daily_1x[["DATE", "NAV_END"]].merge(
+    benchmark[["DATE", "CLOSE"]], on="DATE", how="inner"
+).sort_values("DATE")
+
+merged_market["DAILY_RETURN"] = merged_market["NAV_END"].pct_change()
+merged_market["BENCHMARK_RETURN"] = merged_market["CLOSE"].pct_change()
+merged_market = merged_market.dropna(
+    subset=["DAILY_RETURN", "BENCHMARK_RETURN"]
+)
 market_rows = []
 for label, sub in [
     ("FULL", merged_market),
