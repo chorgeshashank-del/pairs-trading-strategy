@@ -1,13 +1,16 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
+import os
 
 
 # ============================================================
 # NIFTY PHARMA POINT-IN-TIME MEMBERSHIP CONSTRUCTION
 # ============================================================
 
-PROJECT_ROOT = Path(r"C:\fin proj")
+PROJECT_ROOT = Path(
+    os.environ.get("PAIR_TRADING_PROJECT_ROOT", str(Path(__file__).resolve().parents[1]))
+).resolve()
 
 TOTAL_RETURN_FILE = (
     PROJECT_ROOT
