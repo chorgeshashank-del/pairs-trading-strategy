@@ -143,6 +143,7 @@ Run these commands in order. Wait for each command to finish successfully before
 python src/02_nifty_pharma_total_return_construction.py
 python src/03_nifty_pharma_point_in_time_membership_v2.py
 python src/nifty_pharma_formation_investability_diagnostics.py
+python src/nifty_pharma_final_fno_universe_FINAL.py
 python src/engle_granger_pair_selection_BIDIRECTIONAL_FINAL.py
 python src/ssd_COMPLETE_FASTTRACK_FINAL_WINDOW_FIXED.py
 python src/engle_granger_COMPLETE_REQUIRED_BACKTEST_FIXED.py
