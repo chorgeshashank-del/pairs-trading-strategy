@@ -141,6 +141,7 @@ Run these commands in order. Wait for each command to finish successfully before
 
 ```powershell
 python src/02_nifty_pharma_total_return_construction.py
+python src/rebuild_clean_equity_base.py
 python src/03_nifty_pharma_point_in_time_membership_v2.py
 python src/nifty_pharma_formation_investability_diagnostics.py
 python src/nifty_pharma_final_fno_universe_FINAL.py
