@@ -1,0 +1,47 @@
+DATE,YEAR,STATUS,ROWS_ADDED,URL,MESSAGE
+2020-01-01,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JAN/cm01JAN2020bhav.csv.zip,
+2020-01-06,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JAN/cm06JAN2020bhav.csv.zip,
+2020-01-09,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JAN/cm09JAN2020bhav.csv.zip,
+2020-02-04,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/FEB/cm04FEB2020bhav.csv.zip,
+2020-02-05,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/FEB/cm05FEB2020bhav.csv.zip,
+2020-02-21,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-02-25,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/FEB/cm25FEB2020bhav.csv.zip,
+2020-03-10,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-03-13,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/MAR/cm13MAR2020bhav.csv.zip,
+2020-03-17,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/MAR/cm17MAR2020bhav.csv.zip,
+2020-04-02,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-04-06,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-04-10,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-04-14,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-04-16,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/APR/cm16APR2020bhav.csv.zip,
+2020-04-17,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/APR/cm17APR2020bhav.csv.zip,
+2020-04-22,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/APR/cm22APR2020bhav.csv.zip,
+2020-04-29,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/APR/cm29APR2020bhav.csv.zip,
+2020-05-01,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-05-18,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/MAY/cm18MAY2020bhav.csv.zip,
+2020-05-25,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-06-15,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUN/cm15JUN2020bhav.csv.zip,
+2020-06-19,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUN/cm19JUN2020bhav.csv.zip,
+2020-06-22,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUN/cm22JUN2020bhav.csv.zip,
+2020-07-02,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUL/cm02JUL2020bhav.csv.zip,
+2020-07-07,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUL/cm07JUL2020bhav.csv.zip,
+2020-07-10,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUL/cm10JUL2020bhav.csv.zip,
+2020-07-17,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUL/cm17JUL2020bhav.csv.zip,
+2020-07-21,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/JUL/cm21JUL2020bhav.csv.zip,
+2020-08-11,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/AUG/cm11AUG2020bhav.csv.zip,
+2020-08-12,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/AUG/cm12AUG2020bhav.csv.zip,
+2020-08-28,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/AUG/cm28AUG2020bhav.csv.zip,
+2020-08-31,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/AUG/cm31AUG2020bhav.csv.zip,
+2020-09-16,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/SEP/cm16SEP2020bhav.csv.zip,
+2020-10-02,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-10-12,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/OCT/cm12OCT2020bhav.csv.zip,
+2020-10-26,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/OCT/cm26OCT2020bhav.csv.zip,
+2020-10-27,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/OCT/cm27OCT2020bhav.csv.zip,
+2020-11-03,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/NOV/cm03NOV2020bhav.csv.zip,
+2020-11-16,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-11-18,2020,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2020/NOV/cm18NOV2020bhav.csv.zip,
+2020-11-30,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2020-12-09,2020,RECOVERED,26,https://archives.nseindia.com/content/historical/EQUITIES/2020/DEC/cm09DEC2020bhav.csv.zip,
+2020-12-17,2020,RECOVERED,26,https://archives.nseindia.com/content/historical/EQUITIES/2020/DEC/cm17DEC2020bhav.csv.zip,
+2020-12-18,2020,RECOVERED,26,https://archives.nseindia.com/content/historical/EQUITIES/2020/DEC/cm18DEC2020bhav.csv.zip,
+2020-12-25,2020,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts

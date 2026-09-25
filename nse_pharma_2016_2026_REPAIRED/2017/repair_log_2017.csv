@@ -1,0 +1,52 @@
+DATE,YEAR,STATUS,ROWS_ADDED,URL,MESSAGE
+2017-01-17,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JAN/cm17JAN2017bhav.csv.zip,
+2017-01-20,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JAN/cm20JAN2017bhav.csv.zip,
+2017-01-26,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-01-27,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JAN/cm27JAN2017bhav.csv.zip,
+2017-02-03,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/FEB/cm03FEB2017bhav.csv.zip,
+2017-02-07,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/FEB/cm07FEB2017bhav.csv.zip,
+2017-02-10,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/FEB/cm10FEB2017bhav.csv.zip,
+2017-02-13,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/FEB/cm13FEB2017bhav.csv.zip,
+2017-02-17,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/FEB/cm17FEB2017bhav.csv.zip,
+2017-02-23,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/FEB/cm23FEB2017bhav.csv.zip,
+2017-02-24,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-03-13,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-03-17,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/MAR/cm17MAR2017bhav.csv.zip,
+2017-03-29,2017,RECOVERED,29,https://archives.nseindia.com/content/historical/EQUITIES/2017/MAR/cm29MAR2017bhav.csv.zip,
+2017-04-04,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-04-14,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-04-18,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/APR/cm18APR2017bhav.csv.zip,
+2017-05-01,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-05-02,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/MAY/cm02MAY2017bhav.csv.zip,
+2017-05-17,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/MAY/cm17MAY2017bhav.csv.zip,
+2017-05-23,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/MAY/cm23MAY2017bhav.csv.zip,
+2017-06-14,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JUN/cm14JUN2017bhav.csv.zip,
+2017-06-26,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-06-28,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JUN/cm28JUN2017bhav.csv.zip,
+2017-07-10,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JUL/cm10JUL2017bhav.csv.zip,
+2017-07-12,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JUL/cm12JUL2017bhav.csv.zip,
+2017-07-18,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JUL/cm18JUL2017bhav.csv.zip,
+2017-07-20,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/JUL/cm20JUL2017bhav.csv.zip,
+2017-08-04,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/AUG/cm04AUG2017bhav.csv.zip,
+2017-08-09,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/AUG/cm09AUG2017bhav.csv.zip,
+2017-08-15,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-08-25,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-09-05,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/SEP/cm05SEP2017bhav.csv.zip,
+2017-09-08,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/SEP/cm08SEP2017bhav.csv.zip,
+2017-09-15,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/SEP/cm15SEP2017bhav.csv.zip,
+2017-09-19,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/SEP/cm19SEP2017bhav.csv.zip,
+2017-10-02,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-10-06,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/OCT/cm06OCT2017bhav.csv.zip,
+2017-10-09,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/OCT/cm09OCT2017bhav.csv.zip,
+2017-10-16,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/OCT/cm16OCT2017bhav.csv.zip,
+2017-10-18,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/OCT/cm18OCT2017bhav.csv.zip,
+2017-10-20,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
+2017-11-01,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/NOV/cm01NOV2017bhav.csv.zip,
+2017-11-06,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/NOV/cm06NOV2017bhav.csv.zip,
+2017-11-08,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/NOV/cm08NOV2017bhav.csv.zip,
+2017-11-28,2017,RECOVERED,26,https://archives.nseindia.com/content/historical/EQUITIES/2017/NOV/cm28NOV2017bhav.csv.zip,
+2017-11-30,2017,RECOVERED,26,https://archives.nseindia.com/content/historical/EQUITIES/2017/NOV/cm30NOV2017bhav.csv.zip,
+2017-12-05,2017,RECOVERED,26,https://archives.nseindia.com/content/historical/EQUITIES/2017/DEC/cm05DEC2017bhav.csv.zip,
+2017-12-18,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/DEC/cm18DEC2017bhav.csv.zip,
+2017-12-19,2017,RECOVERED,25,https://archives.nseindia.com/content/historical/EQUITIES/2017/DEC/cm19DEC2017bhav.csv.zip,
+2017-12-25,2017,NOT_FOUND_IN_DIRECT_ARCHIVE,0,,No file found on direct NSE archive hosts
