@@ -126,6 +126,9 @@ The reproduced cumulative net returns were:
 - Engle–Granger: +4.34%
 
 ### Run instructions
+python src/rebuild_clean_equity_base.py
+python src/rebuild_corporate_action_ledger.py
+python src/02_nifty_pharma_total_return_construction.py
 
 Install the packages listed in `requirements.txt` first.
 
