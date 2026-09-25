@@ -78,7 +78,6 @@ Over the full comparison period, the Engle–Granger strategy outperformed the D
 
 The results suggest that the stricter relationship test used by Engle–Granger produced fewer but higher-quality trading opportunities in this sample.
 
-## Repository Structure
 
 ## Repository Structure
 
