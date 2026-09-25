@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
+import os
 
 # ============================================================
 # NIFTY PHARMA: TOTAL-RETURN CONSTRUCTION
@@ -39,17 +40,13 @@ from pathlib import Path
 # 1. PATHS
 # ============================================================
 
-EQ_BASE_FILE = Path(
-    r"C:\fin proj\nse_pharma_clean_base"
-) / "NIFTY_PHARMA_EQ_BASE_2016_2026.csv"
+PROJECT_ROOT = Path(
+    os.environ.get("PAIR_TRADING_PROJECT_ROOT", str(Path(__file__).resolve().parents[1]))
+).resolve()
 
-LEDGER_FILE = Path(
-    r"C:\fin proj\nse_pharma_corporate_action_ledger"
-) / "CORPORATE_ACTION_TREATMENT_LEDGER_2016_2026.csv"
-
-OUTPUT_DIR = Path(
-    r"C:\fin proj\nse_pharma_total_return"
-)
+EQ_BASE_FILE = PROJECT_ROOT / "nse_pharma_clean_base" / "NIFTY_PHARMA_EQ_BASE_2016_2026.csv"
+LEDGER_FILE = PROJECT_ROOT / "nse_pharma_corporate_action_ledger" / "CORPORATE_ACTION_TREATMENT_LEDGER_2016_2026.csv"
+OUTPUT_DIR = PROJECT_ROOT / "nse_pharma_total_return"
 
 OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
 
