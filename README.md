@@ -1,4 +1,4 @@
-# Statistical Pairs Trading on Indian Equities
+# Statistical Pairs Trading on Indian Equities 
 
 A research project comparing two statistical pairs-trading methods on Indian listed equities:
 
@@ -16,7 +16,7 @@ Test whether a simple relative-value pairs-trading strategy can produce meaningf
 - trading-calendar alignment,
 - realistic short-selling eligibility,
 - transaction costs,
-- and a separate final evaluation period not used for strategy development.
+- and a reserved final evaluation period, with its information-exposure limitations disclosed below.
 
 The analysis uses Indian pharmaceutical equities and maintains a point-in-time universe so that stocks are included only when they were actually eligible at that date.
 
@@ -69,7 +69,7 @@ The final comparison covers the period from February 2017 through July 2026.
 
 ## Main Result
 
-In the final evaluation, the Engle–Granger strategy performed substantially better than the Distance / SSD strategy.
+Over the full comparison period, the Engle–Granger strategy outperformed the Distance / SSD strategy under the primary specification.
 
 | Method | Net Return | Convergence Rate |
 |---|---:|---:|
@@ -80,10 +80,67 @@ The results suggest that the stricter relationship test used by Engle–Granger 
 
 ## Repository Structure
 
-```text
-pairs-trading-strategy/
-│
-├── src/       Python code for data construction, pair selection and backtesting
-├── results/   Final trade ledger and method-comparison results
-├── report/    Full research report
-└── README.md
+## Repository Structure
+
+- `src/`: Python scripts for data preparation, pair selection, backtesting and figure generation.
+- `results/`: Trade ledger, performance comparison, monthly returns, daily portfolio values, trade statistics, attribution and sensitivity results.
+- `report/`: Research report.
+- `exhibits/`: Cost-sensitivity and formation-window figures.
+- `requirements.txt`: Specified Python package versions.
+
+## Setup and Figure Reproduction
+
+Download and extract the repository, then open a terminal in the folder containing `requirements.txt`.
+
+Install the required packages:
+
+```bash
+python -m pip install -r requirements.txt
+```
+
+Recreate both figures:
+
+```bash
+python src/make_submission_exhibits.py
+```
+
+The command reads the saved result tables and writes:
+
+- `exhibits/figure_1_cost_sensitivity.png`
+- `exhibits/figure_2_formation_window_sensitivity.png`
+
+Its input files are:
+
+- `results/FINAL_COST_SENSITIVITY.csv`
+- `results/ROBUSTNESS_COMPARISON.csv`
+- `results/FULL_DEV_OOS_COMPARISON.csv`
+
+The figure script sets the NumPy random seed to `20260830`. The plotted figures use saved results and do not require random sampling.
+
+## Backtest Reproduction Status
+
+Figure reproduction is supported by the included result tables.
+
+A complete rerun from source data requires additional project datasets and cached exchange files that are not yet packaged in this repository. The strategy scripts use the original project directory structure, with the project root configurable through `PAIR_TRADING_PROJECT_ROOT`.
+
+Running the figure command does not rerun pair selection or the backtests. Reproduction of the complete pipeline from a fresh repository download remains to be verified.
+
+## Results and Interpretation
+
+The reported +4.34% Engle–Granger return and -10.38% SSD return are cumulative net returns over the full comparison period, February 2017 through July 2026. They are not annual returns or returns from the reserved final period alone.
+
+Engle–Granger generated 10 trades and SSD generated 20 trades. Changing the formation-window length reversed the ranking between methods, so the primary comparison does not establish that Engle–Granger is universally superior.
+
+## Evaluation Period and Limitations
+
+The reserved final period begins on 1 August 2024. Earlier implementation diagnostics exposed some information from this period before the final specification was frozen. It is therefore a partially exposed evaluation period, not a completely untouched test.
+
+Engle–Granger generated no trades in that period. Its 0% return represents remaining in cash and provides no evidence of profitable out-of-sample trading.
+
+Other limitations include:
+
+- Futures profit and loss uses an adjusted spot-price approximation rather than reconstructed historical futures contracts.
+- Exact monthly futures rolls and whole-number contract sizing are not modelled.
+- Historical surveillance restrictions and locked-circuit execution are not fully reconstructed.
+- Missing benchmark observations require calendar-alignment verification before market beta and correlation are treated as final.
+- The small trade sample limits confidence in the results.
